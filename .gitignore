@@ -1,4 +1,4 @@
-# Python
+# Python (legacy - keeping for reference)
 __pycache__/
 *.py[cod]
 *$py.class
@@ -35,3 +35,10 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+*.log
+
