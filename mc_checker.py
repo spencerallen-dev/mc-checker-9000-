@@ -8,6 +8,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 from mcstatus import JavaServer
 import threading
+import re
 
 
 class MinecraftServerChecker:
@@ -180,7 +181,6 @@ class MinecraftServerChecker:
                 motd_text = str(motd)
             
             # Remove common Minecraft color codes
-            import re
             motd_clean = re.sub(r'§[0-9a-fk-or]', '', motd_text)
             result_text += f"   {motd_clean}\n"
             
