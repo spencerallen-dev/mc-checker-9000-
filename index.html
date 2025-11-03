@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Minecraft Server Checker 9000</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/218202713?s=400&u=51caf98913829540eca74b7fa7ecb351ddd744bd&v=4" type="image/png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<header>
+  <h1>🎮 Minecraft Server Checker 9000</h1>
+  <nav>
+    <a href="https://spencerallen.me" target="_blank">Home</a>
+    <a href="https://github.com/spencerallen-dev/mc-checker-9000-" target="_blank">GitHub</a>
+  </nav>
+</header>
+
+<div class="main-content">
+  <div class="checker-container">
+    <div class="input-section">
+      <label for="serverInput">Server Address:</label>
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="serverInput" 
+          placeholder="mc.hypixel.net"
+          value="mc.hypixel.net"
+        >
+        <button id="checkBtn" onclick="checkServer()">Check Status</button>
+      </div>
+    </div>
+
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <div class="status-message" id="statusMessage">
+      Enter a server address and click 'Check Status'
+    </div>
+
+    <div class="results-container" id="resultsContainer">
+      <h3>Server Information</h3>
+      <div class="results-box" id="resultsBox">
+        <pre id="resultsText">Enter a server address above to check its status.</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Made with 💙 by <a href="https://spencerallen.me" target="_blank">Spencer Allen</a></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
